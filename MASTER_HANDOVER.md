@@ -1114,6 +1114,7 @@ E:\SDP_4
 GitHub: https://github.com/zunayed328/healthbridge-bd
 
 Git log (latest 7):
+28e48f2 feat: end-to-end medicine search Flutter to FastAPI to PostgreSQL working
 66aeefa feat: Flutter mobile app running - home screen with navigation
 2fef70b docs: update handover before flutter session
 de466da feat: add medicine catalog API with sample data seeder
