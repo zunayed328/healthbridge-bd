@@ -11,6 +11,8 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 from app.models.base import Base
 from app.models.user import User, Role
 from app.models.audit import AuditEvent
+from app.models.pharmacy import Pharmacy
+from app.models.medicine import MedicineCatalog, PharmacyInventory
 
 config = context.config
 
