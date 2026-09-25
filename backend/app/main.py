@@ -24,7 +24,11 @@ app.include_router(auth_router, prefix="/api/v1")
 
 @app.on_event("startup")
 async def startup_event():
-    pass
+    from app.core.database import AsyncSessionLocal
+    from app.core.seeder import seed_roles
+
+    async with AsyncSessionLocal() as db:
+        await seed_roles(db)
 
 
 @app.get("/")
