@@ -1,0 +1,4 @@
+{
+  "paths": ["app"],
+  "ignore_paths": ["alembic", "venv", "__pycache__", ".env"]
+}

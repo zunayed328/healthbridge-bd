@@ -19,6 +19,11 @@ app.add_middleware(
 )
 
 
+@app.on_event("startup")
+async def startup_event():
+    pass
+
+
 @app.get("/")
 async def root():
     return {
@@ -33,6 +38,5 @@ async def root():
 async def health_check():
     return {
         "status": "healthy",
-        "database": "connected",
-        "cache": "connected",
+        "version": settings.APP_VERSION,
     }
