@@ -1,0 +1,5 @@
+﻿[project]
+name = "healthbridge-bd-backend"
+version = "0.1.0"
+description = "HealthBridge BD backend"
+requires-python = ">=3.11"
