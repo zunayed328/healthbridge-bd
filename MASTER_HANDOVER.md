@@ -1052,7 +1052,7 @@ At the end of significant work, provide checkpoint:
 ====================================================================
 
 Student: Mohammad Zunayed | BUBT | CSE Data Science
-Current Phase: Backend complete; Flutter setup next
+Current Phase: Backend complete; Flutter integration in progress
 
 --- UI Status ---
 Stitch screens 1-10: REPORTED AS GENERATED (not confirmed coded)
@@ -1065,7 +1065,7 @@ Note: A generated Stitch prompt ≠ completed mockup.
       A completed mockup ≠ coded feature.
 
 --- Coding Status ---
-Flutter implementation: NOT STARTED
+Flutter implementation: HOME + MEDICINE SEARCH COMPLETE
 Next.js implementation: NOT STARTED
 FastAPI backend: FOUNDATION COMPLETE
 PostgreSQL/PostGIS setup: RUNNING
@@ -1088,11 +1088,14 @@ Any training dataset prepared: NONE YET
 --- Repository ---
 Current repository: E:\SDP_4
 GitHub: https://github.com/zunayed328/healthbridge-bd
-Available files: Backend, Docker Compose services, ADRs, project scaffold, and medicine catalog feature
+Available files: Backend, Docker Compose services, ADRs, project scaffold, medicine catalog feature, and Flutter app
 
 --- Progress ---
 Latest completed task:
-Medicine Catalog API complete with sample data seeder.
+End-to-end medicine search working!
+Flutter medicine finder connects to FastAPI backend.
+Search "napa" returns real PostgreSQL data.
+App running on Windows desktop.
 
 Backend completed features:
 - FastAPI server running on port 8000
@@ -1111,13 +1114,13 @@ E:\SDP_4
 GitHub: https://github.com/zunayed328/healthbridge-bd
 
 Git log (latest 7):
+66aeefa feat: Flutter mobile app running - home screen with navigation
+2fef70b docs: update handover before flutter session
 de466da feat: add medicine catalog API with sample data seeder
 85cce4a feat: add default roles seeder running on startup
 8742a02 docs: update handover with auth endpoints status
 6dd5965 feat: add auth endpoints with JWT, bcrypt, register and login
 799cd96 feat: add SQLAlchemy models and Alembic migration for users, roles, audit
-7631bb7 docs: update handover with backend foundation status
-f5d6c2e feat: add FastAPI backend foundation with PostgreSQL and Redis setup
 
 Docker services:
 - healthbridge_postgres: postgis/postgis:16-3.4 on port 5432
@@ -1128,16 +1131,10 @@ Current blocker:
 Token limit reached. Switching to new AI session.
 
 Next exact task:
-Setup Flutter mobile app in mobile/ folder.
-Steps needed:
-1. flutter create . inside mobile/ folder
-2. Setup project structure (features, core, shared)
-3. Create app_theme.dart with HealthBridge design system
-4. Create main.dart with MaterialApp
-5. Setup bottom navigation for patient
+Add auth screen (login/register) to Flutter app.
 
 Coding status:
-- Flutter: NOT STARTED
+- Flutter: HOME SCREEN + MEDICINE SEARCH COMPLETE
 - Next.js: NOT STARTED
 - ML components: NOT STARTED
 
